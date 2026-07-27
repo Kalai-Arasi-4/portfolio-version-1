@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Kalaiyarasi A</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9ff;
+    }
+
+    .header_area {
+      background-color: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav_container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+    }
+
+    .nav_menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav_menu a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      padding-bottom: 4px;
+      transition: 0.3s;
+    }
+
+    .nav_menu a:hover,
+    .nav_menu a.active {
+      color: #6f42c1;
+      border-bottom: 2px solid #6f42c1;
+    }
+
+    .banner_area {
+      background-color: #f9f9ff;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .banner_area h2 {
+      font-size: 36px;
+      color: #6f42c1;
+      margin-bottom: 10px;
+    }
+
+    .banner_area p a {
+      color: #6f42c1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .skills_area {
+      background-color: #ffffff;
+      padding: 60px 20px;
+    }
+
+    .main_title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .main_title h2 {
+      font-size: 30px;
+      color: #6f42c1;
+      margin-bottom: 10px;
+    }
+
+    .main_title p {
+      color: #555;
+    }
+
+    .skills_grid {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .skill {
+      margin-bottom: 25px;
+    }
+
+    .skill_name {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .skill_name img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .skill_percentage {
+      background-color: #e0e0e0;
+      height: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+
+    .skill_progress {
+      background-color: #6f42c1;
+      height: 100%;
+      transition: width 0.5s ease-in-out;
+    }
+
+    .html_css { width: 95%; }
+    .java { width: 80%; }
+    .sql { width: 75%; }
+    .c_programming { width: 60%; }
+    .python { width: 50%; }
+    .git_version_control { width: 50%; }
+
+    .footer_area {
+      background-color: #fff;
+      color: #777;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      font-size: 14px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <!--================ Start Header Area =================-->
+  <header class="header_area">
+    <div class="nav_container">
+      <a class="logo" href="index.html"><img src="k logo.png" alt="Logo" /></a>
+      <ul class="nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="skills.html">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!--================ End Header Area =================-->
+
+  <!--================ Start Banner Area =================-->
+  <section class="banner_area">
+    <h2>My Skills</h2>
+    <p><a href="index.html">Home</a> / Skills</p>
+  </section>
+  <!--================ End Banner Area =================-->
+
+  <!--================ Start Skills Section =================-->
+  <section class="skills_area">
+    <div class="main_title">
+      <h2>Technical Skills</h2>
+      <p>Tools & languages I work with</p>
+    </div>
+
+    <div class="skills_grid">
+      <div class="skill">
+        <span class="skill_name">
+          <img src="skill1.png" alt="Web Development" /> Web Development
+        </span>
+        <div class="skill_percentage">
+          <div class="skill_progress html_css"></div>
+        </div>
+        <span>95%</span>
+      </div>
+
+      <div class="skill">
+        <span class="skill_name">
+          <img src="skill2.png" alt="Java" /> Java
+        </span>
+        <div class="skill_percentage">
+          <div class="skill_progress java"></div>
+        </div>
+        <span>80%</span>
+      </div>
+
+      <div class="skill">
+        <span class="skill_name">
+          <img src="skill3.jpeg" alt="SQL" /> SQL
+        </span>
+        <div class="skill_percentage">
+          <div class="skill_progress sql"></div>
+        </div>
+        <span>75%</span>
+      </div>
+
+      <div class="skill">
+        <span class="skill_name">
+          <img src="skill4.jpeg" alt="C Programming" /> C Programming
+        </span>
+        <div class="skill_percentage">
+          <div class="skill_progress c_programming"></div>
+        </div>
+        <span>60%</span>
+      </div>
+
+      <div class="skill">
+        <span class="skill_name">
+          <img src="skill5.png" alt="Python" /> Python
+        </span>
+        <div class="skill_percentage">
+          <div class="skill_progress python"></div>
+        </div>
+        <span>50%</span>
+      </div>
+
+      <div class="skill">
+        <span class="skill_name">
+          <img src="skill6.png" alt="Git" /> Git Version Control
+        </span>
+        <div class="skill_percentage">
+          <div class="skill_progress git_version_control"></div>
+        </div>
+        <span>50%</span>
+      </div>
+    </div>
+  </section>
+  <!--================ End Skills Section =================-->
+
+  <!--================ Start Footer =================-->
+  <footer class="footer_area">
+    <p>&copy; 2025 Kalaiyarasi A. All rights reserved.</p>
+  </footer>
+  <!--================ End Footer =================-->
+
+</body>
+</html>

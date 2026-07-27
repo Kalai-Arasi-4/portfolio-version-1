@@ -1,0 +1,153 @@
+/* General Reset and Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9ff;
+  color: #000;
+}
+
+/* Navbar Styles */
+.header_area {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav_menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_menu li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s;
+  padding-bottom: 4px;
+}
+
+.nav_menu li a:hover,
+.nav_menu li a.active {
+  color: #6f42c1;
+  border-bottom: 2px solid #6f42c1;
+}
+
+/* Banner Styles */
+.home_banner_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.home_banner {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.home_text {
+  max-width: 600px;
+}
+
+.home_text h3 {
+  color: #6f42c1;
+  font-size: 24px;
+  margin: 0;
+}
+
+.home_text h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  font-weight: 800;
+  color: #6f42c1;
+}
+
+.home_text h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+}
+
+.button_group {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.primary_btn {
+  padding: 12px 22px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.primary_btn span {
+  color: #fff;
+}
+
+.primary_btn {
+  background: #6f42c1;
+  border: none;
+}
+
+.primary_btn.tr-bg {
+  background: transparent;
+  border: 2px solid #6f42c1;
+}
+
+.primary_btn.tr-bg span {
+  color: #6f42c1;
+}
+
+.primary_btn:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.home_image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ✅ Updated Footer Styles */
+.footer_area {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+  margin-top: auto; /* pushes footer to bottom if space */
+}
+
+/* ✅ Also add this to your HTML <body> in index.html */
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

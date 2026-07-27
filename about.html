@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - Kalaiyarasi A</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9ff;
+    }
+
+    .header_area {
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav_container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+    }
+
+    .nav_menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav_menu a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      padding-bottom: 4px;
+      transition: 0.3s;
+    }
+
+    .nav_menu a:hover,
+    .nav_menu a.active {
+      color: #6f42c1;
+      border-bottom: 2px solid #6f42c1;
+    }
+
+    .banner_area {
+      background-color: #f9f9ff;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .banner_area h2 {
+      font-size: 36px;
+      color: #6f42c1;
+      margin-bottom: 10px;
+    }
+
+    .banner_area p a {
+      color: #6f42c1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .about_area {
+      padding: 80px 20px;
+      background-color: #ffffff;
+    }
+
+    .about_content {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about_image img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .about_text {
+      max-width: 550px;
+    }
+
+    .about_text h2 {
+      font-size: 30px;
+      color: #6f42c1;
+      margin-bottom: 20px;
+    }
+
+    .about_text p {
+      color: #333;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .primary_btn {
+      background-color: #6f42c1;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.3s;
+    }
+
+    .primary_btn:hover {
+      background-color: #5a34a0;
+    }
+
+    .primary_btn img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .footer_area {
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+      margin-top: 60px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <!--================ Start Header Area =================-->
+  <header class="header_area">
+    <div class="nav_container">
+      <a class="logo" href="index.html"><img src="k logo.png" alt="Logo"></a>
+      <ul class="nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!--================ End Header Area =================-->
+
+  <!--================ Start Page Banner =================-->
+  <section class="banner_area">
+    <div class="container banner_content">
+      <h2>About Me</h2>
+      <p><a href="index.html">Home</a> / About</p>
+    </div>
+  </section>
+  <!--================ End Page Banner =================-->
+
+  <!--================ Start About Section =================-->
+  <section class="about_area">
+    <div class="about_content">
+      <div class="about_image">
+        <img src="sitting.avif" alt="Kalaiyarasi A">
+      </div>
+      <div class="about_text">
+        <h2>Hi, I'm Kalaiyarasi A</h2>
+        <p>I’m a passionate web developer who enjoys crafting simple, elegant websites using HTML and CSS. I love learning new things and exploring how websites work behind the scenes.</p>
+        <p>I’m currently diving into JavaScript to expand my front-end skills, and I’m excited about creating user-friendly web experiences.</p>
+        <a class="primary_btn" href="727623BCS071_CSE.pdf">
+          <img src="sitting.avif" alt="Download Icon">
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--================ End About Section =================-->
+
+  <!--================ Start Footer Area =================-->
+  <footer class="footer_area">
+    <div class="container">
+      <p>&copy; 2025 Kalaiyarasi A. All rights reserved.</p>
+    </div>
+  </footer>
+  <!--================ End Footer Area =================-->
+
+</body>
+</html>
